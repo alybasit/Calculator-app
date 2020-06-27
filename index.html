@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            background-image: linear-gradient(rgba(26, 26, 26, 0.7), rgba(26, 26, 26, 0.7)), url(images/calculator.jpg);
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            background-position: center center;
+            height: 100%;
+            width: 100%;
+            background-size: cover;
+        }
+    </style>
+    <link rel="stylesheet" href="style.css">
+    <div style="background-image: url('images/calculator.jpg');"></div>
+</head>
+
+<body>
+    <div class="main">
+        <div>
+            <input id="result" type="text" class="text">
+        </div>
+        <div>
+            <table class="table">
+                <tr>
+                    <th><button class="btn left num black" onclick="clearResult()">C</button></th>
+                    <th><button class="btn num" onclick="getNumber('(')">(</button></th>
+                    <th><button class="btn num" onclick="getNumber(')')">)</button></th>
+                    <th><button class="sign btn" onclick="getNumber('+')">+</button></th>
+                </tr>
+                <tr>
+                    <th><button class="btn left num" onclick="getNumber('7')">7</button></th>
+                    <th><button class="btn num" onclick="getNumber('8')">8</button></th>
+                    <th><button class="btn num" onclick="getNumber('9')">9</button></th>
+                    <th><button class="sign btn" onclick="getNumber('-')">-</button></th>
+                </tr>
+                <tr>
+                    <th><button class="btn left num" onclick="getNumber('4')">4</button></th>
+                    <th><button class="btn num" onclick="getNumber('5')">5</button></th>
+                    <th><button class="btn num" onclick="getNumber('6')">6</button></th>
+                    <th><button class="sign btn" onclick="getNumber('*')">x</button></th>
+                </tr>
+                <tr>
+                    <th><button class="btn left num" onclick="getNumber('1')">1</button></th>
+                    <th><button class="btn num" onclick="getNumber('2')">2</button></th>
+                    <th><button class="btn num" onclick="getNumber('3')">3</button></th>
+                    <th><button class="sign btn" onclick="getNumber('/')">/</button></th>
+                </tr>
+                <tr>
+                    <th><button class="btn left num" onclick="getNumber('.')">.</button></th>
+                    <th><button class="btn num" onclick="getNumber('0')">0</button></th>
+                    <th colspan="1"></th>
+                    <th><button class="sign btn black" onclick="getResult()">=</button></th>
+                </tr>
+            </table>
+        </div>
+    </div>
+    <div class="footer">
+        <p class="statement">Copyright © 2020 | Calculator App by Basit Ali |</p>
+    </div>
+
+</body>
+</style>
+<script src="app.js"></script>
+
+</html>
